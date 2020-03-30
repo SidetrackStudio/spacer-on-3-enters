@@ -1,0 +1,44 @@
+{
+	"name": "spacer-on-3-enters",
+	"version": "0.0.1",
+	"description": "Trigger a spacer block to be created after three consecutive Enter key presses in the WordPress block editor.",
+	"main": "index.js",
+	"scripts": {
+		"build": "wp-scripts build",
+		"check-engines": "wp-scripts check-engines",
+		"check-licenses": "wp-scripts check-licenses",
+		"dev": "wp-scripts start",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"lint:pkg-json": "wp-scripts lint-pkg-json",
+		"start": "wp-scripts start",
+		"test:e2e": "wp-scripts test-e2e",
+		"test:unit": "wp-scripts test-unit-js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/SidetrackStudio/spacer-on-3-enters.git"
+	},
+	"keywords": [
+		"audio",
+		"image"
+	],
+	"author": "",
+	"license": "GPL-2.0",
+	"bugs": {
+		"url": "https://github.com/SidetrackStudio/spacer-on-3-enters/issues"
+	},
+	"homepage": "https://github.com/SidetrackStudio/spacer-on-3-enters#readme",
+	"devDependencies": {
+		"@wordpress/components": "^8.3.2",
+		"@wordpress/scripts": "^5.1.0",
+		"css-loader": "^3.2.0",
+		"ignore-emit-webpack-plugin": "^2.0.2",
+		"mini-css-extract-plugin": "^0.8.0",
+		"node-sass": "^4.13.1",
+		"path": "^0.12.7",
+		"postcss-loader": "^3.0.0",
+		"postcss-preset-env": "^6.7.0",
+		"sass-loader": "^7.1.0"
+	}
+}
