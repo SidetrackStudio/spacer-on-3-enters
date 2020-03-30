@@ -3,6 +3,11 @@
  */
 import { isEmpty } from 'lodash';
 
+import {
+	DOWN,
+	ENTER
+} from '@wordpress/keycodes';
+
 /**
  * WordPress dependencies
  */
@@ -16,7 +21,7 @@ import {
 
 import {
 	focus
-} from '@wordpress/com';
+} from '@wordpress/compose';
 
 import {
 	createBlock
@@ -51,14 +56,23 @@ class ThreeEntersToSpacer extends Component {
 	componentDidMount() {
 		this.focus();
 	}
-
+ 
+	onKeyDown( event ) {
+		const { keyCode } = event;
+		
+		if ( keyCode === DOWN ) {
+			alert( 'You pressed the down arrow!' );
+		} else if ( keyCode === ENTER ) {
+			alert( 'You pressed the enter key!' );
+		} else {
+			alert( 'You pressed another key.' );
+		}
+	}
+	
 	focus() {
-		if ( null !== this.nameInput.current ) {
-			const tabbables = focus.tabbable.find( document.querySelector( '.components-modal--sidetrack-studio-transform-empty' ) );
-			if ( tabbables.length ) {
-				document.activeElement.blur();
-				tabbables[ 0 ].focus();
-			}
+		if ( null == this.nameInput.current ) {
+			// const tabbables = focus.tabbables.find( document.querySelector( '.components-modal--sidetrack-studio-transform-empty' ) );
+			return;
 		}
 	}
 
