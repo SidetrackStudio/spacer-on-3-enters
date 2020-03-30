@@ -1,13 +1,13 @@
 <?php
 /**
- * Plugin Name:     Three Entersto Spacer
+ * Plugin Name:     Three Enters to Spacer
  * Plugin URI:      https://github.com/pbrocks/spacer-on-3-enters
  * Description:     Custom blocks for WordPress.
  * Author:          pbrocks
  * Author URI:      https://github.com/pbrocks
  * Text Domain:     spacer-on-3-enters
  * Domain Path:     /languages
- * Version:         0.1.1
+ * Version:         0.2.1
  *
  * @package         spacer_on_3_enters
  */
